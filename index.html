@@ -4,10 +4,10 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js – The HTML Presentation Framework</title>
+		<title>DATA DSL HA PYTHON</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<meta name="description" content="DATA DSL HA PYTHON presenatation for Moscow python conference">
+		<meta name="author" content="Ilya Beda">
 
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -315,22 +315,23 @@ def factorial():
 
                                  <section>
                                    <h2>eve</h2>
-                                   <pre><code class="python">schema = {
-    'role': {
-        'type': 'list',
-        'allowed': ["author", "contributor", "copy"],
-    },
-    'location': {
-        'type': 'dict',
-        'schema': {
-            'address': {'type': 'string'},
-            'city': {'type': 'string'}
+                                   <pre><code class="python">DOMAIN = {
+    'works':  {
+        'cache_control': 'max-age=10,must-revalidate',
+        'cache_expires': 10,
+        'additional_lookup': {
+            'url': 'regex("[\w]+")',
+            'field': 'title'
         },
-    },
-    'born': {
-        'type': 'datetime',
-    },
-}</code></pre></section>
+        'schema': {
+            'title': {
+                'type': 'string',
+                'required': True,
+            }
+        }
+    }
+}
+</code></pre></section>
 
 
 
